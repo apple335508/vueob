@@ -45,7 +45,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|jpg|gif)$/,
+                test: /\.(png|jpg|gif|ttf)$/,
                 use: [
                     // 这里的limit配置的是字节大小
                     { loader: 'url-loader', options: { limit: 4000 } },
