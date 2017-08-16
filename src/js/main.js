@@ -13,6 +13,9 @@ Vue.use(mintUi);
 //导入过滤器
 import  './fitte.js'
 
+import VuePreview from 'vue-preview'
+Vue.use(VuePreview)
+
 //引入自己的根目录文件
 import app from '../component/App.vue';
 //引入自己配置好的路由

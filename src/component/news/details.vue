@@ -12,20 +12,24 @@
 					</div>
 				</div>		
 	</div>
+   <v-commit :id="id"></v-commit>
     </section>   
 </template>
 <script>
     import config from '../../js/config.js';
     import ctitl from '../common/title.vue';
+    import comit from '../common/comit.vue';
     export default{
         data(){
             return{
                 news:{},
-                title:'新闻详情'
+                title:'新闻详情',
+                id:this.$route.params.id
             }
         },
         methods:{
             getinfor(){
+                // console.log(this.$route.params.id)
                 let  url= config.newsDetails+this.$route.params.id;
               this.$http.get(url).then(rep => {
                 rep.body.status == 0 && (this.news = rep.body.message[0]);
@@ -39,7 +43,8 @@
         //添加组件
      
        components:{
-        'v-title':ctitl
+        'v-title':ctitl,
+        'v-commit':comit
         }
     }
 </script>

@@ -31,7 +31,6 @@ export default {
         getNews() {
             let url = config.newsList;
             this.$http.get(url).then(rep => {
-                // console.log(rep)
                 rep.body.status == 0 && (this.list = rep.body.message);
             });
         }
