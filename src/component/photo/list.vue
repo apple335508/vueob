@@ -8,7 +8,7 @@
     <div class="mui-card"  v-for='ite in pholis'  :key="ite.id"> 
          <div class="mui-card-header mui-card-media">
      <router-link :to="'/photo/datails/'+ite.id">
-             <img :src="ite.img_url"/>
+             <img v-lazy="ite.img_url"/>
      </router-link>
          </div>
 				<div class="mui-card-content">

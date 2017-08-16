@@ -14,7 +14,9 @@ export default {
     photos:domain+'/api/getthumimages/',
 
     //商品列表的选项栏
-    shoplist:domain+'/api/getgoods?',
-    // shopdesc:domain+'/api/getgoods',
-
+    shoplist:domain+'/api/getgoods',
+    shioinfote:domain+'/api/goods/getinfo/',
+    shopbuys:domain+'/api/goods/getdesc/',
+    shopinfos:domain+'/api/goods/getshopcarlist/'
+    
 };

@@ -11,21 +11,21 @@ import pohodetal from '../component/photo/datails.vue';
 
 //引入商品的路由
 import shoplist from '../component/shops/list.vue';
-// import shopdetal from '../component/shops/details.vue'
+import shopdetal from '../component/shops/details.vue'
 //导出路由的实例
 export default new VueRouter({
     routes:[
         {path:'/',redirect:'/index'},
-        {path:'/index',component:index},
-        { path: '/news/list', component: cnmews},
+        {path:'/index',component:index, name:'index'},
+        {path: '/news/list', component: cnmews},
         {path:'/news/details/:id',component:detalis},
         
         //图片展示区域
         {path:'/photo/list/:id',component:photolist },
         {path:'/photo/datails/:id',component:pohodetal},
         //商品信息展示区域
-        {path:'/shops/list/:id',component:shoplist},
-        // {path:'/shops/details/:id',component:shopdetal}
+        {path:'/shops/list',component:shoplist, name:'goodL'},
+        {path:'/shops/details/:id',component:shopdetal, name: 'goodsD'}
     ]
     
 })

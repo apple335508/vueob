@@ -2,7 +2,7 @@
   "name": "test",
   "version": "1.0.0",
   "scripts": {
-    "dev": "webpack-dev-server --inline --open --content-base build "
+    "dev": "webpack-dev-server --inline --open --port 8082"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",

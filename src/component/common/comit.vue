@@ -24,7 +24,7 @@
                          <p>{{item.content }}</p>
                     </li>
                 </ul>
-                <button   ref="load-more-btn"  @click="getsholis" type="button" class="mui-btn mui-btn-success mui-btn-block">加载更多</button>
+                <button   ref="loadmorebtn"  @click="getsholis" type="button" class="mui-btn mui-btn-success mui-btn-block">加载更多</button>
             </div>
         </div> 
     </section>
@@ -72,7 +72,7 @@ export default{
                     this.list.push(...bod.message);
                     this.pageindex++
                     }else{
-                        this.$refs.loadMoreBtn.disabled=true;
+                        this.$refs.loadmorebtn.disabled=true;
                     }
                     // console.log(this.$refs.loadMoreBtn)
               })
