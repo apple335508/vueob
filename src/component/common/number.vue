@@ -26,7 +26,7 @@
      
     
       //监听
-      watch:{
+    watch:{
           info(){
            this.$emit('change',this.info)
           }

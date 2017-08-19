@@ -17,6 +17,8 @@ export default {
     shoplist:domain+'/api/getgoods',
     shioinfote:domain+'/api/goods/getinfo/',
     shopbuys:domain+'/api/goods/getdesc/',
-    shopinfos:domain+'/api/goods/getshopcarlist/'
+    //商品购物车的详情页
+    shopinfos:domain+'/api/goods/getshopcarlist/',
+
     
 };

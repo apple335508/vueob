@@ -11,7 +11,13 @@ import pohodetal from '../component/photo/datails.vue';
 
 //引入商品的路由
 import shoplist from '../component/shops/list.vue';
-import shopdetal from '../component/shops/details.vue'
+import shopdetal from '../component/shops/details.vue';
+//引入商品购物车的路由
+import shopcar from '../component/shopcat/list.vue';
+//购物车的订单页面
+import shoporde from '../component/shopcat/order.vue';
+//引入登录模块
+import logins from '../component/user/login.vue'
 //导出路由的实例
 export default new VueRouter({
     routes:[
@@ -25,7 +31,13 @@ export default new VueRouter({
         {path:'/photo/datails/:id',component:pohodetal},
         //商品信息展示区域
         {path:'/shops/list',component:shoplist, name:'goodL'},
-        {path:'/shops/details/:id',component:shopdetal, name: 'goodsD'}
+        {path:'/shops/details/:id',component:shopdetal, name: 'goodsD'},
+        //购物车页面
+        {path:'/shopcat/list',component:shopcar, name:'goodsby'},
+        //配置购物车的订单页面
+        {path:'/shopcat/order',component:shoporde, name:'goodorde'},
+        //配置登录模块
+        {path:'/user/login',component:logins, name:'goodlogin'},
     ]
     
 })

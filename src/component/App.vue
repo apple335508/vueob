@@ -1,7 +1,7 @@
 <template>
 <main>
       <v-header></v-header>
-       <router-view></router-view>
+      <router-view></router-view>
       <v-footer></v-footer>
 </main>
 </template>

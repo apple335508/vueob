@@ -3,6 +3,36 @@ import storage from '../common/stroge';
 const storagekey="goodstatal";
 //获取当前商品的总量
 let goodstatal=storage.get(storagekey)||{};
+export default{
+    state:{},
+    getters:{
+      get(state){
+
+      },
+      getTotalList(){
+        return Object.values(state)
+      },
+      getDalist(){
+        return Object.keys(state)
+      },
+    },
+    mutations:{
+        set(state,obj){
+            state[obj.id]=obj.total;
+            storage.set(storagekey,state)
+        },
+        remove(state,obj){
+            delete state[obj.id];
+            storage.set(storagekey,state)
+        }
+    }
+}
+
+import storage from '../common/stroge';
+//声明当前的键值的变量
+const storagekey="goodstatal";
+//获取当前商品的总量
+let goodstatal=storage.get(storagekey)||{};
 // console.log(goodstatal)
 export default{
     // 设置购物车的商品数据

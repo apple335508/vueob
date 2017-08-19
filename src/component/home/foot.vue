@@ -14,8 +14,10 @@
 			</router-link>
 			</a>
 			<a class="mui-tab-item" href="#tabbar-with-contact">
+				<router-link :to="{name:'goodL'}">
 				<span class="mui-icon mui-icon-extra mui-icon-extra-express"><span class="mui-badge">{{total}}</span></span>
 				<span class="mui-tab-label">购物车</span>
+				</router-link>
 			</a>
 			<a class="mui-tab-item" href="#tabbar-with-map">
 				<span class="mui-icon mui-icon-contact"></span>
@@ -25,6 +27,7 @@
     </footer>
 </template>
 <script>
+// 
     import forms from '../../js/model/local.js';
 	export default{
 		data(){
